@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Cris - Pedido</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url("../Practica/Assets/fondoPag.png");
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+    </style>
+    <a href="practica_html_LaunchX.html">
+        <img src="./Assets/logoHD.png" alt="pasteleria_cris" width="150px">
+    </a>
+    
+    <h2>- Pedido -</h2>
+    <h3>Seleccione el tamaño del pastel:</h3>
+    <input type="radio" id="Pequeño" name="tamaño" value="Pequeño">
+    <label for="Pequeño">Pequeño</label><br>
+    <input type="radio" id="Mediano" name="tamaño" value="Mediano">
+    <label for="Mediano">Mediano</label><br>
+    <input type="radio" id="Grande" name="tamaño" value="Grande">
+    <label for="Grande">Grande</label><br><br>
+
+    <h3>Seleccione el o los sabores del pastel:</h3><br>
+    <input type="checkbox" id="topping1" name="topping1" value="TresLeches">
+    <label for="topping1">Tres leches</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Chocolate">
+    <label for="topping2">Chocolate</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Cajeta">
+    <label for="topping3">Cajeta</label><br>  
+    <input type="checkbox" id="topping4" name="topping4" value="Lechera"> 
+    <label for="topping4">Lechera</label><br><br>
+
+    <h3>Seleccione la decoración que desee:</h3>
+    <input type="radio" id="Betun" name="decoracion" value="Betun">
+    <label for="Betun">Betún</label><br>
+    <input type="radio" id="Fondant" name="decoracion" value="Fondant">
+    <label for="Fondant">Fondant</label><br>
+    <input type="radio" id="FD" name="decoracion" value="FD">
+    <label for="FD">Figuras detalladas</label><br>
+    <input type="radio" id="Ninguna" name="decoracion" value="Ninguna">
+    <label for="Ninguna">Ninguna</label><br><br>  
+    
+    <h3>¿Algún antojo?</h3><br>
+    <input type="checkbox" id="ant1" name="ant1" value="Bolitas de queso">
+    <label for="ant1">Bolitas de queso</label><br>
+    <input type="checkbox" id="ant2" name="ant2" value="Vasos de gelatina">
+    <label for="ant2">Vasos de gelatina</label><br>
+    <input type="checkbox" id="ant3" name="ant3" value="Galletas horneadas">
+    <label for="ant3">Galletas horneadas</label><br>  
+    <input type="checkbox" id="ant4" name="ant4" value="Vaso de helado"> 
+    <label for="ant4">Vaso de helado</label><br>
+    <input type="checkbox" id="ant5" name="ant5" value="No"> 
+    <label for="ant5">No gracias. :)</label><br><br>    
+
+    <h2>Ingrese sus datos:</h2>
+    <label for="nombre">Ingrese su nombre:</label><br>    
+    <input type="text" id="Input1" name="Input1"><br><br>
+    <label for="numero">Ingrese su número</label><br>
+    <input type="number" id="numero" name="numero"><br><br> 
+    <label for="direcc">Ingrese su dirección:</label><br>    
+    <input type="text1" id="Input2" name="Input2"><br><br>           
+    <label for="vol">Ingrese la cantidad de propina:</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    <input type="button" id="boton1" name="boton1" value="Realizar pedido" onclick="alert('Su pedido se ha realizado con éxito. :D');"><br><br>
+
+</body>
+</html>
